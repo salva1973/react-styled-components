@@ -1,3 +1,6 @@
+import { createGlobalStyle } from 'styled-components'
+
+const GlobalStyles = createGlobalStyle`
 :root {
   --primary: #645cff;
   --mainBorder: 1px solid red;
@@ -14,11 +17,6 @@ body {
   background: #f2f4f8;
 }
 
-.title {
-  text-align: center;
-  text-transform: capitalize;
-}
-
 .btn {
   background: #645cff;
   color: #fff;
@@ -31,16 +29,6 @@ body {
   width: 200px;
   margin: 1rem auto;
 }
+`
 
-.bg-grey {
-  background: grey;
-}
-
-.title {
-  text-transform: uppercase;
-  color: red;
-}
-
-/* @media screen and (min-width: 768px) {
-
-} */
+export default GlobalStyles
